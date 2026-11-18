@@ -1,0 +1,123 @@
+{
+  "today": "2026-06-20",
+  "budget_cents": 30000,
+  "mapping": [
+    {
+      "channel": "web",
+      "starts": "2026-01-01",
+      "market": "home"
+    },
+    {
+      "channel": "web",
+      "starts": "2026-06-15",
+      "market": "tropical"
+    },
+    {
+      "channel": "shop",
+      "starts": "2026-01-01",
+      "market": "home"
+    }
+  ],
+  "catalog": [
+    {
+      "lot": "old",
+      "sku": "wash",
+      "formula": "calendula",
+      "state": "retired",
+      "from": "2026-01-01",
+      "until": "2026-06-15"
+    },
+    {
+      "lot": "new",
+      "sku": "wash",
+      "formula": "turmeric",
+      "state": "active",
+      "from": "2026-06-15",
+      "until": null
+    },
+    {
+      "lot": "balm",
+      "sku": "balm",
+      "formula": "plain",
+      "state": "active",
+      "from": "2026-01-01",
+      "until": null
+    }
+  ],
+  "orders": [
+    {
+      "id": "o1",
+      "channel": "web",
+      "lot": "old",
+      "ordered": "2026-06-10",
+      "return_until": "2026-06-25",
+      "net_before_return": 9000,
+      "campaign": "summer"
+    },
+    {
+      "id": "o2",
+      "channel": "web",
+      "lot": "new",
+      "ordered": "2026-06-16",
+      "return_until": "2026-06-28",
+      "net_before_return": 11000,
+      "campaign": "summer"
+    },
+    {
+      "id": "o3",
+      "channel": "shop",
+      "lot": "balm",
+      "ordered": "2026-05-29",
+      "return_until": "2026-06-12",
+      "net_before_return": 10000,
+      "campaign": "pilot"
+    }
+  ],
+  "returns": [
+    {
+      "id": "r1",
+      "order": "o1",
+      "received": "2026-06-18",
+      "cost": 2500
+    }
+  ],
+  "commitments": [
+    {
+      "id": "p1",
+      "lot": "new",
+      "market": "tropical",
+      "cents": 7000,
+      "state": "booked"
+    },
+    {
+      "id": "p2",
+      "lot": "balm",
+      "market": "home",
+      "cents": 6000,
+      "state": "draft"
+    }
+  ],
+  "spend": [
+    {
+      "id": "k1",
+      "campaign": "summer",
+      "channel": "web",
+      "day": "2026-06-12",
+      "cents": 1000
+    },
+    {
+      "id": "k2",
+      "campaign": "summer",
+      "channel": "web",
+      "day": "2026-06-16",
+      "cents": 2000
+    },
+    {
+      "id": "k3",
+      "campaign": "pilot",
+      "channel": "shop",
+      "day": "2026-05-27",
+      "cents": 1300
+    }
+  ]
+}
