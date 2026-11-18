@@ -1,0 +1,58 @@
+{
+  "definition": {
+    "name": "本土化产品市场概览",
+    "subject": "订单记录",
+    "table": "orders",
+    "group": "market",
+    "measure": "units"
+  },
+  "tables": {
+    "products": [
+      {
+        "sku": "calm-1",
+        "formula": "calendula",
+        "batch": "b1"
+      },
+      {
+        "sku": "trop-2",
+        "formula": "turmeric",
+        "batch": "b2"
+      }
+    ],
+    "feedback": [
+      {
+        "feedback_id": "f1",
+        "sku": "calm-1",
+        "kind": "gentle"
+      },
+      {
+        "feedback_id": "f2",
+        "sku": "trop-2",
+        "kind": "light"
+      }
+    ],
+    "orders": [
+      {
+        "order_id": "o1",
+        "sku": "calm-1",
+        "market": "cn",
+        "units": 12,
+        "campaign": "spring"
+      },
+      {
+        "order_id": "o2",
+        "sku": "trop-2",
+        "market": "id",
+        "units": 18,
+        "campaign": "launch"
+      },
+      {
+        "order_id": "o3",
+        "sku": "calm-1",
+        "market": "cn",
+        "units": 6,
+        "campaign": "none"
+      }
+    ]
+  }
+}
